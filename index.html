@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text"name=""id="uname">
+        <input type="text"name=""id="pwd">
+        <input type="submit"name=""value="login"onclick="demo();">
+    </form>
+    <script>
+        function demo(){
+            var peoples=[
+            {
+                username:"varnika",
+                password:"poswal",
+            },
+            {
+                username:"Neha",
+                password:"rana",
+            },
+            ]
+            var uname =document.getElementById("uname").value;
+            var pwd =document.getElementById("pwd").value;
+           for(i=0;i<peoples.length;i++){
+               if(uname==peoples[i].username&&pwd==peoples[i].password){
+                   document.write(uname+"congratulation!! you are logged in");
+                   return;
+               }
+           }
+           document.write("you are entering wrong details");
+        }
+    </script>
+</body>
+</html>
